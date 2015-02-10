@@ -1,1 +1,1 @@
-gem 'compass', 0.12.5
+gem 'compass', '0.12.5'
