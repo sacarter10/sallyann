@@ -1,3 +1,6 @@
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
 body {
 	display: -webkit-box;
   display: -webkit-flex;
@@ -47,6 +50,6 @@ h3 {
 }
 
 .logo {
-	height: 30px;
-	width: auto;
+	font-size: 30px;
+	
 }
