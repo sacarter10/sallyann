@@ -1,70 +1,115 @@
-body {
-	display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-    -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center; 
+* {
+  box-sizing: border-box;
+}
 
-  height: 100%;        
- 	background: #111133;
- 	background: -webkit-radial-gradient(#000055, #111133);
-  background: radial-gradient(#000055, #111133);
- 		color:  #d44302;
+$orange: #d44302;
+$lightBlue: #3a5eca;
+$darkBlue: #000055;
+
+body {      
+  background: #111133;
+ // background: -webkit-radial-gradient($darkBlue, $lightBlue);
+  background: radial-gradient($lightBlue, $darkBlue);
+  color:  $orange;
+  font-family: sans-serif;
 }
 
 a {
-	color:  #d44302;
+	color:  $orange;
+  text-decoration: none;
 }
 
 h1 {
 	margin-top: 0;
 	margin-bottom: 10px;
   font-size: 40px;
-	font-weight: 400;
+  font-weight: 400;
+  text-align: center;
 }
 
 h3 {
 	margin-top: 0;
 	margin-bottom: 10px;
-	font-weight: 300;
+	font-weight: 600;
+}
+
+.home {
+  height: 100%;  
+    display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; 
 }
 
 #card {
 	display: inline-block;
-	padding: 40px;
+	padding: 30px;
 	background-color: #fff;
-	font-family: sans-serif;
 	font-weight: 300;
 	border-radius: 4px;
 }
 
-.links {
-display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-    -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: space-around;
-          justify-content: space-between;
+.content {
+  padding: 30px;
+  margin: 40px auto;
+  background-color: #fff;
+  font-weight: 300;
+  border-radius: 4px;
+  max-width: 960px;
+}
 
-  list-style: none;
+.projects {
+  h1 {
+    color: $lightBlue;
+  }
+}
+
+.links {
+  list-style-type: none;
+
   padding: 0;
   margin: 0;
 
-	li {
-		font-size: 30px;
-	}
-	
+  li {
+    font-size: 20px;
+    width: 100%;
+    padding: 10px 30px;
+    text-align: center;
+  }
+
+}
+
+
+.project-list {
+  li {
+    font-size: 16px;
+    width: 100%;
+    padding: 10px 0;
+    overflow: hidden;
+  }
+
+  a {
+    font-size: 14px;
+    text-decoration: underline;
+  }
+}
+
+.space-trail-preview, .asteroids-preview {
+  width: 200px;
+  float: right;
+  margin: 0 0 10px 10px;
+}
+
+.transmitter-preview {
+  width: 200px;
+  float: left;
+  margin: 10px 10px 0 0;
 }
