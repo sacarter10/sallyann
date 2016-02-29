@@ -66,7 +66,7 @@ h3 {
   background-color: #fff;
   font-weight: 300;
   border-radius: 4px;
-  max-width: 960px;
+  max-width: 840px;
 }
 
 /* line 70, ../sass/screen.scss */
@@ -88,29 +88,56 @@ h3 {
   text-align: center;
 }
 
-/* line 92, ../sass/screen.scss */
+/* line 91, ../sass/screen.scss */
+.project-list {
+  padding: 10px;
+}
+/* line 94, ../sass/screen.scss */
 .project-list li {
   font-size: 16px;
   width: 100%;
-  padding: 10px 0;
+  padding: 30px 0;
   overflow: hidden;
 }
-/* line 99, ../sass/screen.scss */
+/* line 101, ../sass/screen.scss */
 .project-list a {
   font-size: 14px;
   text-decoration: underline;
 }
 
-/* line 105, ../sass/screen.scss */
+/* line 107, ../sass/screen.scss */
 .space-trail-preview, .asteroids-preview {
   width: 200px;
   float: right;
   margin: 0 0 10px 10px;
 }
 
-/* line 111, ../sass/screen.scss */
+/* line 113, ../sass/screen.scss */
 .transmitter-preview {
   width: 200px;
   float: left;
   margin: 10px 10px 0 0;
+}
+
+@media only screen and (max-width: 500px) {
+  /* line 120, ../sass/screen.scss */
+  .content {
+    margin: 10px auto;
+    padding: 20px;
+  }
+
+  /* line 125, ../sass/screen.scss */
+  .project-list {
+    padding: 0;
+  }
+
+  /* line 129, ../sass/screen.scss */
+  .project-list li {
+    padding: 10px;
+  }
+
+  /* line 133, ../sass/screen.scss */
+  .space-trail-preview, .asteroids-preview, .transmitter-preview {
+    display: none;
+  }
 }
